@@ -1,0 +1,229 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+        <link href="drawables/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+        <link rel="stylesheet" href="css/index.css" type="text/css">   
+        <title> Case 1 </title>
+    </head> 
+    <body>
+    
+
+    <div class="navbar-brand">
+        <a class="logoItem navbar-item draw-bottom">
+                <img src="drawables/logo2.png" class="mainLogo">
+        </a>
+    </div>
+    
+    <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation"> 
+        <div class="navbar-brand">
+            <a class="logoItem navbar-item draw-bottom">
+                    <img src="drawables/logo2.png" class="mainLogo">
+            </a>
+            <div id ="mobileToggle" class="navbar-burger burger">
+                <span class="mobileIcon"></span>
+                <span class="mobileIcon"></span>
+                <span class="mobileIcon"></span>
+            </div>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+            <div class="navbar-start navSide">
+                    <div class="navbar-item draw-bottom case-opening">
+                        <span class="icon">
+                            <img class="caseIcon" src="drawables/Anderson-Web-Icons_Inventory-Management_3_Custom-Consignment-1.png">
+                        </span>
+                        <p id="navCaseOpening">
+                            Case Opening
+                        </p>
+                    </div>
+                    <div class="navbar-item draw-bottom inventory">
+                        <span class="icon">
+                            <img src="drawables/2551-200.png">
+                        </span>
+                        <p id="navInventory">
+                            Inventory
+                        </p>
+                    </div>
+                    <div class="navbar-item draw-bottom affiliates">
+                        <span class="icon">
+                            <img src="drawables/affiliates.png">
+                        </span>
+                        <p id="navAffiliates">
+                            Affiliates
+                        </p>
+                    </div>
+            </div>
+            <div class="navbar-end navSide">
+                <div id="signbutton" class="navbar-item draw-bottom">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <a class="button" id="sign-button" href="/auth/steam">
+                                <span class="icon">
+                                    <img src="drawables/steamlogo.png">
+                                </span>
+                                <span style="margin-left:5px">Sign In</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Browser Compatability</p>
+            <button class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            Just a reminder, our site is built for Chrome and Safari browsers ONLY!
+            If your browser is other than these 2 supported, you might encounter issues with the visability and usability of the site
+          </section>
+        </div>
+    </div>
+    
+    <div class="sideContainer">
+        <div class="sideStats">
+            <div class="userCountDiv">
+                <p class="userCountStat odometer "></p>
+                <p class="userCountHeader">Users Online</p>
+            </div>
+            <div class="usersRegDiv">
+                <p class="usersRegCount odometer "></p>
+                <p class="usersRegHeader">Users Registered</p>
+            </div>
+            <div class="casesOpenedDiv">
+                <p class="casesOpenedCount odometer"></p>
+                <p class="casesOpenedHeader">Cases Opened</p>
+            </div>
+            <div class="unboxValueDiv">
+                <p class="valueSign">$</p>
+                <p class="unboxValueCount odometer "></p>
+                <p class="unboxValueHeader">Value of Unboxings</p>
+            </div>
+        </div>
+        <div class="chatContainer">
+            <div class="msgFadeDiv">
+            </div>
+            <div id="chatBox">
+
+            </div>
+            <div class="chatUI">
+                <input class="input chatInput" placeholder="Type a message here..." type="text">
+                    <img class="sendMessageIcon chatButton" src="drawables/sendmessage.png">
+            </div>
+        </div>
+    </div>
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+    </div>
+    <div class="liveDivContainer">
+        <div class="liveContainerHeader">
+            <div class="liveUnboxings">
+                <span class="btn-floating btn-large pulse">
+                    <i class="material-icons"></i>
+                </span>
+                <span class="liveItemsContainerHeader"> Live Unboxings </span>
+            </div>
+            <div class="switch">
+                <label>
+                  Live Items
+                  <input class="switchCheck" type="checkbox">
+                  <span class="lever"></span>
+                  Top Items
+                </label>
+              </div>
+            </div>
+        <div class="liveContainer">
+            <div class="fadeDiv">
+            </div>
+            <div class="liveItemsContainer">
+            </div>
+        </div>
+        <div class="topItemsDiv">
+            <div class="TopItemsContainer">
+            </div>
+        </div>
+    </div>
+    <div class="pageContainer">
+        <div id="modal1" class="modal">
+                <div class="modal-card-head modalHeader">
+                    <span> Congratulations, here are your rewards! </span>
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat"></a>
+                </div>
+            <div class="modal-content">
+                <div class="showcaseContainer">
+                    <div class="openedItemShowcase">
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p class="modalFooterContent"> If you are opening multiple items, they will be displayed here after they are opened </p>
+            </div>
+        </div>
+        <button id="displayShowcase" data-target="modal1" class="btn modal-trigger">Display Rewards</button>
+        <div class="casePageContainer">
+            <div class="itemsInCaseCount">
+                <p class="caseItemCount"></p>
+            </div>
+            <div class="mainCase">
+                <p class="casetext">Weapon Case 1</p>
+                <img class="mainCasePicture mainCaseTopImg" src="https://files.opskins.media/file/vgo-img/case/weapon-case-1-300.png">
+                <img class="mainCasePicture mainCaseBottomImg" src="https://files.opskins.media/file/vgo-img/case/weapon-case-1-300.png">
+                <div class="caseOpenControls">
+                    <p class="caseOpenText">How many cases do you want open?</p>
+                    <input class="input caseInput" type="text" placeholder="0">
+                    <button id="caseopen1button" class="mainOpenCaseButton button">
+                        <span class="icon">
+                                <img src="drawables/keyicon.png">
+                        </span>
+                        <span style="margin-left:5px">Open Case</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="rollDiv">
+            <div class="divider">
+                
+            </div>
+            <div class="rollContainer">
+                
+                
+            </div>         
+        </div>
+        <div class="caseItemsContainer">
+
+        </div>
+        </div>
+    </div>
+    <nav class="navbar is-fixed-bottom navBottom">
+        <div class="socials">
+            <p class="twitterNavBarText"> Follow Us </p>
+            <img class="twitterIcon" src="drawables/twitter.png">
+        </div>
+        <div class="socketConnectionDiv">
+            <a id="socketConnectionHeader">
+                Socket Status:
+            </a>
+            <a id="socketConnectionItem">
+                
+            </a>
+        </div>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/odometer@0.4.8/odometer.min.js"></script>
+    <script type="text/javascript" src="js/client.js"></script>
+    </body>
+</html>

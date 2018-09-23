@@ -1,0 +1,305 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+        <link href="drawables/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+        <link rel="stylesheet" href="css/index.css" type="text/css">     
+        <title> Affiliates </title>
+    </head> 
+    <body>
+    <div class="navbar-brand">
+        <a class="logoItem navbar-item draw-bottom">
+                <img src="drawables/logo2.png" class="mainLogo">
+        </a>
+    </div>
+    
+    <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation"> 
+        <div class="navbar-brand">
+            <a class="logoItem navbar-item draw-bottom">
+                    <img src="drawables/logo2.png" class="mainLogo">
+            </a>
+            <div id ="mobileToggle" class="navbar-burger burger">
+                <span class="mobileIcon"></span>
+                <span class="mobileIcon"></span>
+                <span class="mobileIcon"></span>
+            </div>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+            <div class="navbar-start navSide">
+                <div class="navbar-item draw-bottom case-opening">
+                    <span class="icon">
+                        <img class="caseIcon" src="drawables/Anderson-Web-Icons_Inventory-Management_3_Custom-Consignment-1.png">
+                    </span>
+                    <p id="navCaseOpening">
+                        Case Opening
+                    </p>
+                </div>
+                <div class="navbar-item draw-bottom inventory">
+                    <span class="icon">
+                        <img src="drawables/2551-200.png">
+                    </span>
+                    <p id="navInventory">
+                        Inventory
+                    </p>
+                </div>
+                <div class="navbar-item draw-bottom affiliates">
+                    <span class="icon">
+                        <img src="drawables/affiliates.png">
+                    </span>
+                    <p id="navAffiliates">
+                        Affiliates
+                    </p>
+                </div>
+            </div>
+            <div class="navbar-end navSide">
+                <div id="signbutton" class="navbar-item draw-bottom">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <a class="button" id="sign-button" href="/auth/steam">
+                                <span class="icon">
+                                    <img src="drawables/steamlogo.png">
+                                </span>
+                                <span style="margin-left:5px">Sign In</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Browser Compatability</p>
+            <button class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            Just a reminder, our site is built for Chrome and Safari browsers ONLY!
+            If your browser is other than these 2 supported, you might encounter issues with the visability and usability of the site
+          </section>
+        </div>
+    </div>
+    
+    <div class="sideContainer">
+        <div class="sideStats">
+            <div class="userCountDiv">
+                <p class="userCountStat odometer "></p>
+                <p class="userCountHeader">Users Online</p>
+            </div>
+            <div class="usersRegDiv">
+                <p class="usersRegCount odometer "></p>
+                <p class="usersRegHeader">Users Registered</p>
+            </div>
+            <div class="casesOpenedDiv">
+                <p class="casesOpenedCount odometer"></p>
+                <p class="casesOpenedHeader">Cases Opened</p>
+            </div>
+            <div class="unboxValueDiv">
+                <p class="valueSign">$</p>
+                <p class="unboxValueCount odometer "></p>
+                <p class="unboxValueHeader">Value of Unboxings</p>
+            </div>
+        </div>
+        <div class="chatContainer">
+            <div class="msgFadeDiv">
+            </div>
+            <div id="chatBox">
+
+            </div>
+            <div class="chatUI">
+                <input class="input chatInput" placeholder="Type a message here..." type="text">
+                    <img class="sendMessageIcon chatButton" src="drawables/sendmessage.png">
+            </div>
+        </div>
+    </div>
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+    </div>
+    <div class="liveDivContainer">
+        <div class="liveContainerHeader">
+            <div class="liveUnboxings">
+                <span class="btn-floating btn-large pulse">
+                    <i class="material-icons"></i>
+                </span>
+                <span class="liveItemsContainerHeader"> Live Unboxings </span>
+            </div>
+            <div class="switch switchClick">
+                <label>
+                  Live Items
+                  <input class="switchCheck" type="checkbox">
+                  <span class="lever"></span>
+                  Top Items
+                </label>
+              </div>
+            </div>
+        <div class="liveContainer">
+            <div class="fadeDiv">
+            </div>
+            <div class="liveItemsContainer">
+            </div>
+        </div>
+        <div class="topItemsDiv">
+            <div class="TopItemsContainer">
+            </div>
+        </div>
+    </div>
+    <div class="pageContainer">
+        <div id="modal2" class="modal">
+                <div class="modal-card-head modalHeader">
+                    <img style="margin-right: 5px;" class="icon" src="drawables/settings.png">
+                    <span> Affiliates Settings </span>
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat"></a>
+                </div>
+            <div class="modal-content">
+                <div class="affiliateModalContainer">
+                        <div class="nameDiv">
+                                <span class="affiliateInputInfo">ENTER WAX EXPRESSTRADE ID</span>
+                                <input id="waxId" class="input affiliateInput" placeholder="ExpressTrade ID" type="text">
+                                <button class="button setWaxId">
+                                    SET WAX ID
+                                </button>
+                                <span class="waxInfo">
+                                    You can find your WAX ExpressTrade ID <a href="https://trade.opskins.com/settings#userId" target="_blank"> Here </a>
+                                </span>
+                                <span style ="color: #494949" class="waxInfo">
+                                    You need your WaxID set or you will not recieve any funds from anyone using your code and opening cases.
+                                </span>
+                            </div>
+                            <div class="createReferralDiv">
+                                    <div class="affiliateInputDiv">
+                                        <span class="affiliateInputInfo">ENTER REFERRAL CODE</span>
+                                        <input id="setReferral" class="input affiliateInput" placeholder="Here" type="text">
+                                    </div>
+                                <span class="waxInfo">
+                                    Once someone redeems your code, it is binded to them forever. <span style="color: #2daae1"> Everytime they open a case, you recieve $0.25 BACK!</span>
+                                </span>
+                                <button class="button setReferral">
+                                    CREATE CODE
+                                </button>
+                            </div>
+                            <div class="redeemReferralDiv">
+                                <div class="refContainer">
+                                    <span class="affiliateInputInfo">REDEEM A REFERRAL</span>
+                                    <input id="redeemReferral" class="input affiliateInput" placeholder="Referral Code" type="text">
+                                    <button class="button redeemRef">
+                                        REDEEM CODE
+                                    </button>
+                                </div>
+                                <span class="waxInfo">
+                                    Name bonus rewards and Referral code rewards do <span style="color: #2daae1"> STACK. </span> You are able to recieve both at once from each unboxing
+                                </span>
+                                <br>
+                                <span class="waxInfo">
+                                    Combined <span class="affHighlightedText"> $0.25 </span> reward back to you! <span style="color: #2daae1"> Thats 100% of OUR CUT! </span>
+                                </span>
+                            </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p class="modalFooterContent"> Once Affiliates are set, they can not be changed, be CAREFUL! </p>
+            </div>
+        </div>
+        <div class="affiliatesContainer">
+            <div class="affiliatesTabDiv">
+                <button id="affInfo" style="margin-right: 20px;" class="affiliateTabButton button">
+                    Affiliate Info
+                </button>
+                <button id="affAcc" class="affiliateTabButton button">
+                    Your Affiliates
+                </button>
+            </div>
+            <div class="shareLink">
+                
+            </div>
+            <div class="displayRefCodeUsed">
+                
+            </div>
+            <div class="profileDiv">
+
+            </div>
+            <div class="affiliatesContent">
+                As a reward back to the community of VGO, we are giving back the <span style="color: #2ac78b"> MAJORITY </span> of our cut
+                back to <span style="color: #2ac78b"> YOU! </span>
+                <br>
+                <span> <span class="affHighlightedText"> $0.25 </span> per case back to you!</span>
+                <br>
+                <br>
+                <span style="color: #249ce3"> There are unlimited referral uses, you can get hundreds or thousands of people on your code and recieve $0.25 from every case any of them open forever. </span> 
+                <br>
+                <br>
+                <span style="color: #249ce3; font-size: 25px;">Referring a friend!<span style="color: #ffffff"> $0.25 Per case unboxed! </span> </span>
+                <br>
+                <span style="color: #2ac78b">You can use your OWN referral code for $0.25 back per case unboxed</span>
+                <br>
+                Create a unique referral code and anytime someone enters the referral code, they will be binded to it. Every time they open a case,
+                you recieve a cut of the case unboxing. There is no limit to how many people use your code, you can get hundreds of people using 
+                your code and you will <span style="color: #2ac78b"> recieve a cut on every person referred forever. </span> The money will be deposited directly into your OPskins account
+                balance. 
+                <br>
+                <br>
+                <span style="color: #2ac78b"> In order to do this, click the button at the top of the screen to setup your affiliates, </span> 
+                after this is sorted, <span style="color: #2ac78b"> spread the word about our site with your referral code. </span>
+               
+            </div>
+            <div class="affAccContainer">
+                <div class="affRedeemedUsersContaienr">
+                    <div class="refCode">
+                        <p class="refCodeHeader"> Your Referral Code:  </p>
+                        <p class="refCodeContent"></p>
+                    </div>
+                    <div class="refProfitDiv">
+                        <p class="refProfitHeader">Total cases opened on your code: </p>
+                        <p class="refProfitContent"></p>
+                    </div>
+                    <div class="refBox">
+                        <p class="affAccHeader">
+                            Users on your affiliate code
+                        </p>
+                        <div class="refListHeaders">
+                            <span style="flex: 1;">
+                                User
+                            </span>
+                            <span style="flex: 1;">
+                                Cases Opened on your code
+                            </span>
+                        </div>
+                        <p id="usersOnRefList">
+    
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar is-fixed-bottom navBottom">
+        <div class="socials">
+            <p class="twitterNavBarText"> Follow Us </p>
+            <img class="twitterIcon" src="drawables/twitter.png">
+        </div>
+        <div class="socketConnectionDiv">
+            <a id="socketConnectionHeader">
+                Socket Status:
+            </a>
+            <a id="socketConnectionItem">
+                
+            </a>
+        </div>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/odometer@0.4.8/odometer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+    <script type="text/javascript" src="js/client.js"></script>
+    </body>
+</html>

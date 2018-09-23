@@ -1,0 +1,2821 @@
+accountTitleTextbody {
+    background-color: #21252b;
+}
+
+html {
+    height: 100%;
+    background-color: #181a1d;
+}
+
+.logoDiv {
+    text-align: center;
+    position: relative;
+    top: 10vh;
+}
+
+.textDiv {
+    text-align: center;
+    position: relative;
+}
+
+.splashContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#splashText {
+    font-size: 60px;
+    font-family: 'Stellar';
+    color: #EDF5E1;
+    position: relative;
+    top: 10vh;
+    
+}
+
+#splashText span {
+    vertical-align: bottom;
+}
+
+@font-face {
+        font-family: 'Stellar'; 
+        src: url('/css/fonts/Stellar-Regular.otf'); 
+}
+
+@font-face {
+    font-family: 'Stellar-Light'; 
+    src: url('/css/fonts/Stellar-light.otf'); 
+}
+
+#steamLogin {
+    width: 200px;
+    height: 60px;
+    font-family: 'Stellar';
+    font-size: 20px;
+    background-color: #EDF5E1;
+}
+
+#signOut {
+    width: 200px;
+    height: 50px;
+    font-family: 'Stellar';
+    font-size: 20px;
+    background-color: #EDF5E1;
+}
+
+.loginButtonDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+#logo {
+    border-top: #EDF5E1 5px;
+    border-left: #EDF5E1 5px;
+    border-radius: 25px;
+    border-style: groove;
+}
+
+.accVGOText {
+    text-align: center;
+    font-family: "stellar";
+    font-size: 18px;
+    padding-top: 50px;
+}
+
+.liveDivContainer {
+    width: 200px;
+    right: 0;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 70px;
+    border-right: 1px solid #ffffff79;
+    border-bottom: 1px solid #ffffff79;
+    background-color: #1a1e25;
+    border-left: 1px solid #ffffff79;
+    padding-left: 2px;
+    padding-right: 2px;
+    bottom: 32px;
+}
+/* 
+.indexPageContainer > .liveDivContainer {
+    position: absolute;
+    width: 100%;
+    top: 20px;
+} */
+
+.pageContainer > .liveDivContainer {
+    margin-top:20px;
+}
+
+.caseContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 50px;
+    overflow: scroll;
+    position: absolute;
+    height: 100%;
+}
+
+.casetext {
+    text-align: center;
+    font-family: 'Stellar-Light';
+    font-size: 25px;
+    color: #EDF5E1;
+    margin-top: 25px;
+}
+
+.case {
+    display: flex;
+    flex-direction: column;
+    border: #ffffff0f solid 1px;
+    border-radius: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+
+.buttonClicked {
+    border-color: #29c78c;
+}
+
+.case:hover #caseimg {
+    animation: pulse 2.5s ease-in infinite;
+}
+
+.border-animation:after {
+    content: '';
+    border-bottom: solid 3px #29c78c;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+.border-animation:hover:after { 
+    transform: scaleX(1); 
+}
+
+.border-animation.fromRight:after{ 
+    transform-origin:100% 50%; 
+}
+
+.border-animation.fromLeft:after{  
+    transform-origin:  0% 50%;
+ }
+
+.case1:hover #case1img {
+    animation: pulse 2.5s linear infinite;
+}
+
+.case2:hover #case2img {
+    animation: pulse 2.5s linear infinite;
+}
+
+.case3:hover #case3img {
+    animation: pulse 2.5s linear infinite;
+}
+
+.case4:hover #case4img {
+    animation: pulse 2.5s linear infinite;
+}
+
+@keyframes borderEffect {
+    0% {transform: scaleX(0)}
+
+    50% {transform: scaleX(1)}
+
+    100% {transform: scaleX(0)}
+    
+}
+
+#case1button {
+    color: #EDF5E1;
+    margin-top: 10px;
+    height: 45px;
+    border-bottom: 3px solid #1f6148 !important;
+    border-radius: 3px;
+    background: #2ac78b;
+    border: 0;
+    align-self: center;
+    width: 90%;
+    font-family: "stellar";
+    font-size: 20px;
+    position: absolute;
+    bottom: 30px;
+
+}
+
+#case2button {
+
+    color: #EDF5E1;
+    margin-top: 10px;
+    height: 45px;
+    border-bottom: 3px solid #1f6148 !important;
+    border-radius: 3px;
+    background: #2ac78b;
+    border: 0;
+    align-self: center;
+    width: 90%;
+    font-family: "stellar";
+    font-size: 20px;
+    position: absolute;
+    bottom: 30px;
+
+}
+
+#case3button {
+
+    color: #EDF5E1;
+    margin-top: 10px;
+    height: 45px;
+    border-bottom: 3px solid #1f6148 !important;
+    border-radius: 3px;
+    background: #2ac78b;
+    border: 0;
+    align-self: center;
+    width: 90%;
+    font-family: "stellar";
+    font-size: 20px;
+    position: absolute;
+    bottom: 30px;
+
+}
+
+#case4button {
+
+    color: #EDF5E1;
+    margin-top: 10px;
+    height: 45px;
+    border-bottom: 3px solid #1f6148 !important;
+    border-radius: 3px;
+    background: #2ac78b;
+    border: 0;
+    align-self: center;
+    width: 90%;
+    font-family: "stellar";
+    font-size: 20px;
+    position: absolute;
+    bottom: 30px;
+
+}
+
+.caseKeyIcon {
+    position: absolute;
+    left: 0;
+    padding-left: 10px;
+    width: 50px;
+}
+
+nav {
+    height:70px;
+    background-color: #1a1e24 !important;
+}
+
+.buttondiv {
+    display: flex;
+    flex-direction: column;
+}
+
+#sign-button {
+    width: 150px !important;
+    background-color: #EDF5E1;
+}
+
+.mainLogo {
+    width: 250px;
+    height: 55px !important;
+}
+
+.case-opening {
+    font-family: "Stellar";
+}
+
+.inventory {
+    font-family: "Stellar";
+}
+
+.faq {
+    font-family: "Stellar";
+}
+
+.affiliates {
+    font-family: "Stellar";
+}
+
+#navAffiliates {
+    margin-left: 7px;
+}
+
+.affiliates:hover {
+    cursor: pointer;
+}
+
+.navbar-item img {
+    max-height: 5rem;
+}
+
+.navbar-item {
+    transition: all 0.3s ease-in;
+    color: #EDF5E1;
+    font-size: 20px;
+    background-color: #1a1e25;
+}
+
+.navbar-item:hover {
+    border-bottom: #29c78c 2px;
+    border-bottom-style: inset;
+    color: #29c78c !important;
+}
+
+.navBottom {
+    min-height: 2rem;
+    height: 30px;
+    border-top: 1px solid #ffffff79;
+    z-index: 999999999999 !important;
+}
+
+.is-fixed-top {
+    border-bottom: 1px solid #ffffff79;
+    z-index: 999999999999999999999999 !important;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1) translateY(+10px);
+    }
+
+    50% {
+        transform: scale(1.05) translateY(-10px);
+    }
+
+    100% {
+        transform: scale(1) translateY(+10px);
+    }
+    
+}
+
+@keyframes karambitItemPulse {
+    0% {
+        transform: scale(1) translateY(+10px) rotate(250deg) scaleX(-1);
+    }
+
+    50% {
+        transform: scale(1.05) translateY(-10px) rotate(250deg) scaleX(-1);
+    }
+
+    100% {
+        transform: scale(1) translateY(+10px) rotate(250deg) scaleX(-1);
+    }
+    
+}
+
+@keyframes knifeItemPulse {
+    0% {
+        transform: scale(1) translateY(+10px) rotate(345deg) scaleX(-1);
+    }
+
+    50% {
+        transform: scale(1.05) translateY(-10px) rotate(345deg) scaleX(-1);
+    }
+
+    100% {
+        transform: scale(1) translateY(+10px) rotate(345deg) scaleX(-1);
+    }
+    
+}
+
+@keyframes nonKnifeItemPulse {
+    0% {
+        transform: scale(1) translateY(+10px) rotate(-35deg) scaleX(-1);
+    }
+
+    50% {
+        transform: scale(1.05) translateY(-10px) rotate(-35deg) scaleX(-1);
+    }
+
+    100% {
+        transform: scale(1) translateY(+10px) rotate(-35deg) scaleX(-1);
+    }
+    
+}
+
+@keyframes rewardItemPulse {
+    0% {
+        transform: scale(1) translateY(+10px) rotate(25deg) scaleX(-1);;
+    }
+
+    50% {
+        transform: scale(1.05) translateY(-10px) rotate(25deg) scaleX(-1);;
+    }
+
+    100% {
+        transform: scale(1) translateY(+10px) rotate(25deg) scaleX(-1);;
+    }
+    
+}
+
+#userAvatar {
+    border: 2px solid;
+    border-style: inherit;;
+}
+
+.userDropDown{
+    background-color: #1a1e24 !important;
+}
+
+.navbar-link:hover {
+    color: #29c78c !important;
+}
+
+.divUser {
+    color: #EDF5E1 !important;
+}
+
+.vgoContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.vgoitem {
+    background-color: #1a1e24;
+    border-radius: 10px;
+    width: 20%;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+    padding: 5px;
+    height: 280px;
+    width: 220px;
+    box-shadow: 0px 0px 7px 0px #000000;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.vgoitem:hover .vgoItemsPictures {
+    animation: pulse 2.5s linear infinite;
+}
+
+.vgoItemsPictures {
+    position: absolute;
+    top: 20px;
+}
+
+
+.vgoItemText {
+    position: absolute;
+    text-align: center;
+    font-family: "stellar";
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#inventoryHeader {
+    border-bottom: 2px solid rgba(237, 245, 225, 0.589);
+    border-top: 2px solid rgba(237, 245, 225, 0.1);
+    border-radius: 5px;
+    height: 120px;
+    overflow: hidden;
+    margin-top: 30px;
+    font-size: 40px;
+    color: #EDF5E1;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.invContainer {
+    overflow: hidden;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+}
+
+.inventoryHeaderText {
+    font-size: 40px;
+    color: #EDF5E1;
+}
+
+.accountContainer {
+    background-color: #21252b !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.accountItem {
+    color: #EDF5E1 !important;
+    font-size: 30px !important;
+    padding-top: 50px;
+}
+
+.liftDiv {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#accountHeader1 {
+    border-bottom: 2px solid rgba(237, 245, 225, 0.589);
+    border-top: 2px solid rgba(237, 245, 225, 0.1);
+    border-radius: 5px;
+    height: 120px;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute; 
+    width: 1500px;
+}
+
+#accountHeader2 {
+    border-bottom: 2px solid rgba(237, 245, 225, 0.589);
+    border-top: 2px solid rgba(237, 245, 225, 0.1);
+    border-radius: 5px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute; 
+    bottom: 35px; 
+    width: 1500px;
+}
+
+.accHead1Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.accHead2Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.level-item, .level-item > div > .title {
+    color: #EDF5E1 !important;
+}
+
+.accountLevelitem {
+    border-right: 2px solid #EDF5E1;
+}
+
+#accountHeader2 > div:nth-child(3) {
+    border-right: 0px solid black;
+}
+
+.heading {
+    font-family: 'stellar-light';
+    font-size: 16px;
+}
+
+.title {
+    font-family: 'stellar';
+    font-size: 50px;
+}
+
+.accountItemsContainer {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.accountItem {
+    width: 20%;
+    border: 2px solid #EDF5E1;
+}
+
+.accSubHeader {
+    background-color: #21262b;
+}
+
+.casePageContainer {
+    position: relative;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    height: 530px;
+    min-height: 530px;
+}
+
+.mainCase {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: #8b8c90 1px solid;
+    border-radius: 25px;
+    background-color: #1a1e25;
+    transition: all 5s linear;
+    height: 500px;
+    width: 360px;
+    z-index: 10;
+}
+
+.mainCasePicture {
+    align-self: center;
+    position: absolute;
+    top: 65;
+}
+
+.mainCaseTopImg {
+    z-index: 10;
+    height: 300px;
+    width: 300px;
+}
+
+.mainCaseBottomImg {
+    z-index: 5;
+    filter: drop-shadow(2px 2px 2px black) blur(5px);
+    height: 305px;
+    width: 305px;
+}
+
+.mainOpenCaseButton {
+    margin-top: 10px;
+    height: 50px;
+    min-height: 50px;
+    width: 100%;
+    font-family: 'stellar-light';
+    font-size: 18px;
+    background-color: #2ac78b;
+    border-color: #1a1e24;
+    color: #EDF5E1;
+    border: 1px solid #edf4de;
+    border-bottom: 3px solid #1f6148 !important;
+    font-weight: 600;
+}
+
+.caseItemsContainer {
+    flex: 1;
+    margin-top: 25px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.caseItemCount {
+    border-bottom: 1px solid #87898d;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.caseitem {
+    width: 250px;
+    height: 320px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 0px black;
+    overflow: hidden;
+    justify-content: space-around;
+    position: relative;
+   
+}
+
+.case-item-text {
+    font-family: "stellar";
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: auto;
+    right: auto;
+    width: 100%;
+    color: #d7e0cd;
+}
+
+.case-item-picture {
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 0px;
+    max-width: 150%;
+    padding-left: 25px;
+}
+
+.karambitPulseObj > .case-item-picture {
+    padding-left: 0px !important;
+    padding-right: 25px !important;
+}
+
+.karambitPulseObj:hover .case-item-picture {
+    animation: karambitItemPulse 2.5s linear infinite; 
+}
+
+.nonKnifePulseObj:hover .case-item-picture {
+    animation: nonKnifeItemPulse 2.5s linear infinite; 
+}
+
+.knifePulseObj:hover .case-item-picture {
+    animation: knifeItemPulse 2.5s linear infinite; 
+}
+
+.case-item-price {
+    color: #EDF5E1;
+    font-family: "stellar-light";
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.faqContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.faqText {
+    font-size: 15px;
+    font-family: 'stellar-light';
+    color: #29c78c;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faqHeader {
+    font-size: 40px;
+    font-family: 'stellar';
+    color: #EDF5E1;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.navbar-burger {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+.navKeysImage {
+    height: 40px;
+    width: 40px;
+}
+
+.navKeysText {
+    padding-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.caseOpenControls {
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 34px;
+    height: 160px;
+    position: relative;
+}
+
+.caseOpenText{
+    font-size: 18px;
+    font-family: 'stellar';
+    color: #EDF5E1;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.notification {
+    width: 200px;
+    height: 200px;
+}
+
+.keyDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.openedItemShowcase {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.openedVGOItem {
+    background-color: #29c78c;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+    height: 350px;
+    width: 275px;
+    box-shadow: 0px 0px 7px 0px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.vgoOpenedItemsPicture{
+    filter: drop-shadow(3px 3px 2px black);
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    transform: rotate(25deg) scaleX(-1);
+    bottom: 50px;
+}
+
+.vgoOpenedItemsText{
+    font-family: "stellar-light";
+    color: #EDF5E1;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.openedVGOItem:hover .vgoOpenedItemsPicture {
+    animation: rewardItemPulse 2.5s linear infinite;
+}
+
+.vgoOpenedItemsPrice {
+    font-size: 16px;
+    text-align: center;
+    color: #EDF5E1;
+}
+
+.vgoInspectDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.inspectIcon{
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.vgoOpenedItemsInspect{
+    color: #EDF5E1;
+    font-size: 14px;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.vgoWear {
+    color: #EDF5E1;
+    font-size: 14px;
+    font-family: "stellar";
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+}
+
+.inspectButton {
+    margin-top: 5px;
+    background-color: #EDF5E1;
+}
+
+.rollDiv {
+    border-radius: 25px;
+    position: relative;
+    border: 1px solid #edf5e15c;
+    overflow: hidden;
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #1a1e24;
+    box-shadow: inset 0px 0px 40px 0px black;
+    height: 150px;
+    flex: 1;
+    max-height: 150px;
+    min-height: 150px;
+}
+
+.rollContainer {
+    transform: translateX(0px);
+    height: 150px;
+    transition: all 10s cubic-bezier(.15,.85,.08,1);
+}
+
+.rollDivItem {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+}
+
+.rollDivItemImage {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-right: 1px solid #ffffff42;
+    filter: drop-shadow(1px 1px 1px black) saturate(150%);
+}
+
+@keyframes rollAnimation {
+    0% {transform: translateX(0px)}
+
+    100% {transform: translateX(-3000px)}
+    
+}
+
+.divider {
+    height: 150px;
+    position: absolute;
+    width: 2px;
+    background-color: #edf5e166;
+    left: 50%;
+    box-shadow: 0px 0px 37px 4px black;
+    z-index: 9999999;
+}
+
+.vgoInvItemPrice {
+    text-align: center;
+    font-size: 18px;
+    color: #EDF5E1;
+    width: 100%;
+    position: absolute;
+    bottom: 65px;
+}
+
+.accountTitleDiv {
+    margin-top: 200px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.accountTitleText {
+    color: #EDF5E1;
+    font-size: 40px;
+    font-family: "stellar";
+    text-align: center;
+}
+
+.accShowcaseContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.oiText {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.accVGOItems {
+    position: relative;
+    background-color: #1a1e24;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+    height: 330px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 7px 0px #000000;
+    padding: 10px;
+}
+
+.accVGOItems:hover .vgoItemsPictures {
+    animation: pulse 2.5s ease-in infinite;
+}
+
+.accVgoWear{
+    font-family: "stellar-light";
+    color: #edf5e1;
+    text-align: center;
+}
+
+.accVgoId {
+    font-family: "stellar";
+    color: #2daae1;
+    text-align: center;
+    padding-bottom: 55px;
+}
+
+.statsDiv{
+    overflow: hidden;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+.borderedLevelItem {
+    border-right: 2px solid #EDF5E1;
+}
+
+.innerStatsDiv {
+    height: 160px;
+    border: 2px solid #181a1d;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 6px 0px black;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.loadingOnCaseOpen {
+    position: absolute;
+    right: 100px;
+    top: 0;
+    
+}
+
+  .loaditem {
+    margin-right: 10px;
+  }
+
+  .liveContainer {
+    transition: all 0.5s linear;
+    left: 9px;
+    top: 60px;
+    bottom: 3px;
+    width: 180px;
+    overflow: hidden;
+    border: 2px solid #1a1e24;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 38px 0px black;
+    position: absolute;
+    border: 1px solid #edf5e15c;
+}
+
+.fadeDiv {
+    position: absolute;
+    bottom: 0px;
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+    width: 250px;
+    height: 40%;
+    z-index: 9999;
+}
+
+  .liveItemsContainer {
+      overflow: hidden;
+      transition: all 0.5s linear;
+      height: 100vh;
+      position: relative;
+      box-shadow: inset -1px 0px 40px 0px black;
+      background-color: #181d24;
+  }
+
+  .indexPageContainer {
+      position: absolute;
+      right: 200px;
+      left: 20%;
+      height: calc(100% - 100px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      transition: all 0.5s linear;
+      border: 2px solid #ffffff79;
+      border-radius: 5px;
+      background-image: url("../drawables/finalBG.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+
+  .pageContainer {
+    height: calc(100% - 100px);
+    position: absolute;
+    left: 20%;
+    right: 200px;
+    border-left: 1px solid #ffffff79;
+    border-right: 1px solid #ffffff79;
+    margin-bottom: 30px;
+    overflow: scroll;
+    border-radius: 5px;
+    transition: all 0.5s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    /* background-color: #1a1e25; */
+    background-image: url("../drawables/finalBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+  .liveVGOitems {
+    background-color: #171c23;
+    margin-left: 14px;
+    border-radius: 10px;
+    margin-top: 8px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    height: 140;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    transition: all 0.5s linear;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 12px 5px #1c222b;
+    
+  }
+
+  .liveVGOprice {
+    text-align: center;
+    font-family: "stellar-light";
+    font-size: 20px;
+    color: #EDF5E1;
+    position: absolute;
+    left: auto;
+    right: auto;
+    top: 10;
+    align-self: center;
+  }
+
+  .liveVGOimage {
+    z-index: 10;
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    animation: liveItemPulse 4s linear infinite;
+    padding-left: 10px;
+    overflow: hidden !important;
+  }
+
+  @keyframes liveItemPulse {
+    0% {
+        transform: scale(1) translateY(+10px) rotate(10deg);
+    }
+
+    50% {
+        transform: scale(1.05) translateY(-10px) rotate(20deg);
+    }
+
+    100% {
+        transform: scale(1) translateY(+10px) rotate(10deg);
+    }
+    
+}
+
+  .bottomImg {
+    z-index: 5;
+    filter: drop-shadow(2px 2px 2px black) blur(14px);
+  }
+
+  .liveVGOwear {
+    font-family: "stellar-light";
+    color: #EDF5E1;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .liveVGOavatar {
+      position: absolute;
+      border-radius: 50px;
+      margin-left: 110px;
+      margin-top: 45px;
+  }
+
+  .liveVGOName {
+      max-width: 110px;
+      font-size: 12px;
+      color: #EDF5E1;
+      position: absolute;
+      top: 110px;
+      margin-right: auto;
+      margin-left: auto;
+      overflow: hidden;
+      padding-left: 10px;
+      font-family: "stellar";
+
+  }
+
+  .accVGOPrice {
+      text-align: center;
+      font-family: "stellar";
+      color: #EDF5E1;
+      position: relative;
+      font-size: 18px;
+  }
+
+  #mobileToggle {
+      position: absolute;
+      right: 10px;
+      margin-top: 10px;
+  }
+
+  #navMenu {
+      background: #1a1e25;
+  }
+
+  .mobileIcon {
+      width: 20px !important;
+      height: 2px !important;
+  }
+
+  .liveContainerHeader {
+      position: absolute;
+      left: 5px;
+      font-family: "stellar";
+      font-size: 15px;
+      color: #EDF5E1;
+      top: 5px;
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .sideContainer {
+      position: absolute;
+      margin-top: 0px;
+      left: 0;
+      width: 20%;
+      top: 70px;
+      bottom: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #1a1e25;
+      overflow: hidden;
+      border-right: 1px solid #ffffff79;
+      border-bottom: 1px solid #ffffff79;
+      border-radius: 5px;
+  }
+
+  .statsHeader {
+      font-size: 50px;
+      color: #EDF5E1;
+      font-family: "stellar";
+      text-align: center;
+  }
+
+
+  .chatContainer {
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+
+  .chatUI {
+      margin-top: auto;
+      margin-bottom: auto;
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      bottom: 0px;
+      width: 90%;
+      vertical-align: middle;
+  }
+
+  .chatButton {
+      font-family: "Stellar";
+      font-size: 14px;
+      max-height: 40px;
+      vertical-align: middle;
+  }
+
+  .chatInput {
+      position: absolute;
+      left: 40px;
+      bottom: 0px;
+      height: 100% !important;
+      width: 70% !important;
+      max-height: 40px;
+      font-size: 14px;
+      vertical-align: middle;
+      margin-top: auto;
+      margin-bottom: auto;
+      background-color: #1a1f26 !important;
+      border-bottom: 1px solid #dbdbdb7a;
+      border-right: 1px solid #1a1e25;
+      border-left: 1px solid #1a1e25;
+      border-top: 1px solid #1a1e25;
+      color: #ffffff;
+  }
+
+  .caseInput {
+    color: #ffffff;
+    text-align: center;
+  }
+
+  #chatBox {
+      margin-top: 10px;
+      top: 0px;
+      position: absolute;
+      bottom: 50px;
+      background-color: #1a1e25;
+      overflow: scroll;
+      border-top: 2px solid #ffffff79;
+      border-radius: 5px;
+      margin-left: 15px;
+      overflow-x: hidden;
+      left: 15px;
+      right: 15px;
+  }
+  
+  .stats {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 100%;
+      color: #EDF5E1;
+      font-size: 20px;
+      margin-top: 20px;
+      height: 120px;
+  }
+  
+  .statsValueDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .siteCasesDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .statsTitle {
+      font-size: 30px;
+      font-family: "stellar";
+  }
+
+  .statsContent {
+      font-size: 20px;
+      font-family: "stellar-light";
+  }
+
+  .userInvValue {
+      color: #06ffa2;
+      font-family: "Stellar";
+      font-size: 22px;
+  }
+
+  #invHeaderContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-left: 10px;
+      padding-right: 10px;
+      overflow: hidden;
+  }
+
+  #accHeader {
+      color: #EDF5E1;
+  }
+
+  .messageContent {
+    font-size: 14px;
+    color: white;
+    padding-left: 10px;
+    overflow-wrap: break-word;
+    font-family: "stellar";
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .messageDiv {
+      background: linear-gradient(0.25turn, #1a1e25, #24282f, #1a1e25);
+      padding-right: 5px;
+      padding-top: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; 
+      border-bottom: 1px solid #ffffff79;  
+  }
+
+  .msgContent {
+      margin-bottom: 10px;
+      display: block;
+      font-family: "stellar-light";
+  }
+
+  .chatUserAvatar {
+      height: 35px;
+      width: 35px;
+      border: 1px solid #ffffff71;
+      border-radius: 25px;
+  }
+
+  .spinner {
+    position: absolute;
+    top: calc(50%);
+    left:0;
+    width: 50px;
+    height: 60px;
+    text-align: center;
+    font-size: 10px;
+    z-index: 99999;
+    margin-left: 5px;
+  }
+  
+  .spinner > div {
+    background-color: #29c78c;
+    width: 2px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .spinner .rect1 {
+    position: absolute;
+    width: 2px;
+    margin-left: 2px;
+    margin-top: 18px;
+    height: 20px;
+    transition: all 0.5s linear;
+  }
+  
+  .spinner .rect2 {
+    position: absolute;
+    width: 2px;
+    margin-top: 9px;
+    height: 40px;
+    margin-left: 8px;
+    transition: all 0.5s linear;
+  }
+
+  .spinner .rect3 {
+    position: absolute;
+    width: 2px;
+    height: 60px;
+    margin-left: 14px;
+    transition: all 0.5s linear;
+  }
+
+  .spinner:hover {
+    cursor: pointer;
+   }
+
+   .itemsInCaseCount {
+       position: absolute;
+       bottom: 0px;
+       left: 0px;
+       margin-top: 100px;
+       font-size: 22px;
+       color: #EDF5E1;
+   }
+
+   .socketConnectionDiv {
+       position: absolute;
+       right: 30px;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       width: 250px;
+       height:25px;
+       cursor: auto;
+   }
+
+   #socketConnectionHeader {
+    color: #EDF5E1;
+    font-family: "stellar";
+    font-size: 20px;
+    position: relative;
+    bottom: 17px;
+    cursor: auto;
+   }
+
+   #socketConnectionItem {
+    font-family: "stellar";
+    font-size: 20px;
+    margin-left: 0px !important;
+    position: relative;
+    bottom: 17px;
+    cursor: auto;
+   }
+
+   .twitterIcon {
+       height: 35px;
+       width: 35px;
+       position: relative;
+       bottom: 2px;
+   }
+
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: #29c78c;
+    }
+
+    .chatLogoutCover {
+        height: 35px;
+        font-size: 25px;
+        background-color: #29c78c;
+        color: #edf5e1; 
+        font-family: "stellar-light";
+        margin-left: auto;
+        margin-right: auto;
+        vertical-align: middle;
+        bottom: 8px;
+        
+    }
+
+    .userCountDiv {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 40px;
+        font-size: 16px;
+        vertical-align: middle;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-bottom: 1px solid #ffffff42;
+        overflow: hidden;
+    }
+
+    .userCountHeader {
+        color: #EDF5E1;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        font-family: "stellar";
+        font-weight: 550;
+    }
+
+    .userCountStat {
+        color: #06ffa2;
+        font-size: 20px;
+        overflow: visible;
+    }
+
+    input::-webkit-input-placeholder {
+        color: white !important;
+        }
+        
+    input:-moz-placeholder { /* Firefox 18- */
+    color: white !important;  
+    }
+    
+    input::-moz-placeholder {  /* Firefox 19+ */
+    color: white !important;  
+    }
+    
+    input:-ms-input-placeholder {  
+    color: white !important;  
+    }
+
+    .chatUIAvatar {
+        border: 1px solid #29c78c9c;
+        border-radius: 25px;
+        position: relative;
+    }
+
+    .avatarSpan {
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 50px;
+        position: relative;
+        bottom: 6px;
+    }
+
+    .topUnboxDiv {
+        position: absolute;
+        top: 40px;
+        bottom: 62%;
+        border: 3px solid #87898c;
+        border-radius: 10px;
+        width: 88%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        margin-left: 6%;
+    }
+
+    .topUnboxHeader {
+        position: relative;
+        padding-top: 10px;
+        color: #EDF5E1;
+        font-size: 16px;
+        font-family: "stellar";
+        text-align: center;
+    }
+
+    .topUnboxImage {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .topUnboxImg {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: +999;
+        bottom: 40px;
+    }
+
+    .topUnboxPrice {
+        position: relative;
+        font-size: 22px;
+        font-family: "stellar";
+        text-align: center;
+        bottom: 70px;
+    }
+
+    .topUnboxWear {
+        font-size: 14px;
+        color: #f8c742;
+        font-family: "stellar";
+        text-align: center;
+        position: relative;
+        bottom: 80px;
+    }
+
+    .topUnboxId {
+        font-size: 14px;
+        color: #f8c742;
+        font-family: "stellar";
+        text-align: center;
+    }
+
+    .twitterNavBarText {
+        position: relative;
+        font-size: 20px;
+        color: #29c78c;
+        font-family: "stellar";
+        width: 120px;
+        bottom: 17px;
+    }
+
+    .socials {
+        position: absolute;
+        left: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 120px;
+        height: 25px;
+        cursor:pointer;
+    }
+
+    .TopUnboxStaticText {
+        font-size: 25px;
+        color: #ffffff;
+        font-family: "stellar";
+        text-align: center;
+    }
+
+    .buyKeys {
+        width: 200px;
+    }
+
+    .buykeyicon {
+        vertical-align: middle;
+    }
+
+    .buyKeyDiv {
+        cursor: pointer;
+    }
+
+    .chatLogoutCover {
+        cursor: pointer;
+    }
+
+    .adminTag {
+        color: #EDF5E1;
+        border: 2px solid #ff0000;
+        background-color: #ff0000;
+        border-radius: 2px;
+        padding-right: 5px;
+        position: relative;
+        bottom: 10px;
+    }
+
+    .modal-card-title {
+        color: #EDF5E1;
+    }
+
+    .modal-card-head {
+        background-color: #1a1f26 !important;
+    }
+
+    .modal-card-body {
+        background-color: #1a1f26 !important;
+        color: #EDF5E1;
+    }
+
+    .case-opening:hover {
+        cursor: pointer;
+    }
+
+    .inventory:hover {
+        cursor: pointer;
+    }
+
+    #navCaseOpening {
+        padding-left: 5px;
+    }
+
+    #navInventory {
+        padding-left: 5px;
+    }
+
+    .btn-floating {
+        width: 20px !important;
+        height: 20px !important;
+        background-color: #ff4a4a !important;
+        cursor: auto;
+        margin-right: 5px;
+    }
+
+    #toast-container {
+        top: auto !important;
+        top: 10%;
+        right:2%;  
+      }
+
+      .msgName {
+        position: relative;
+        bottom: 10px;
+      }
+
+      .msgContent {
+        position: relative;
+      }
+
+      .loginChatContent {
+        margin-left: 5px;
+        margin-bottom: 2px;
+        font-size: 20px;
+      }
+    
+    .acclevel {
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-bottom: 5px;
+        font-size: 16px;
+        position: relative;
+        bottom: 10px;
+        background: radial-gradient(#2daae1, #2daae16b);
+        box-shadow: 0px 0px 10px 0px #2daae1;
+        color: #ffffff;
+    }
+        
+    .buyMoreKeys {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 2px;
+    }
+
+    .caseIcon {
+        position: relative;
+        top: 1px;
+    }
+
+    .sendMessageIcon {
+        height: 100%;
+        position: absolute;
+        right: 0;
+        bottom: 5px;
+        cursor: pointer;
+    }
+
+    .usersRegDiv {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 40px;
+        font-size: 16px;
+        vertical-align: middle;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-bottom: 1px solid #ffffff42;
+        overflow: hidden;
+    }
+
+    .usersRegHeader {
+        color: #EDF5E1;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        font-family: "stellar";
+        font-weight: 550;
+    }
+
+    .usersRegCount {
+        color: #06ffa2;
+        font-size: 20px;
+    }
+
+    .casesOpenedDiv {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 40px;
+        font-size: 16px;
+        vertical-align: middle;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-bottom: 1px solid #ffffff42;
+        overflow: hidden;
+    }
+
+    .casesOpenedHeader {
+        color: #EDF5E1;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        font-family: "stellar";
+        font-weight: 550;
+    }
+
+    .casesOpenedCount {
+        color: #06ffa2;
+        font-size: 20px;
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .unboxValueDiv {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 40px;
+        font-size: 16px;
+        vertical-align: middle;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        overflow: hidden;
+    }
+
+    .unboxValueHeader {
+        color: #EDF5E1;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        font-family: "stellar";
+        font-weight: 550;
+    }
+
+    .unboxValueCount {
+        color: #06ffa2;
+        font-size: 20px;
+        left: 30px !important;
+        position: absolute !important;
+    }
+
+    .valueSign {
+        color: #29c78c;
+        position: relative;
+        font-size: 20px;
+        bottom: 5px;
+    }
+
+    .sideStats {
+        border-top: 1px solid #7a7e7a;
+        border-bottom: 1px solid #7b807b;
+        border-radius: 10px;
+        margin-left: 30px;
+        margin-right: 15px;
+        margin-top: 10px;
+    }
+
+    .accountLevel {
+        cursor: auto !important;
+    }
+
+    .userProfilePicture {
+        cursor: auto !important;
+    }
+
+    .liveVGOid {
+        position: absolute;
+    }
+
+    #displayShowcase {
+        height: 40px;
+        background-color: #2ac78b;
+        display: none;
+        transition: all 1s linear;
+    }
+
+    #modal1 {
+        z-index: 99999999 !important;
+        background-color: #14171a;
+        max-height: 80% !important;
+        width: 80% !important;
+        height: 80% !important;
+        top: 0 !important;
+        border-radius: 15px;
+        overflow-y: hidden;
+    }
+
+    .modal-content {
+        width: 100% !important;
+        padding: 0px !important;
+        height: 100%;
+        overflow: scroll;
+        padding-bottom: 100px !important;
+        background-color: #14171a;
+    }
+
+    .modal-footer {
+        border-top: 1px solid #e9f5dd;
+        background-color: #14171a !important;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .modal-header {
+        border: 5px solid green;
+    }
+
+    .modalHeader {
+        justify-content: center;
+        background-color: #14171a !important;
+        font-size: 30px;
+        color: #edf5e1;
+
+    }
+
+    .modal-close {
+        position: absolute;
+        max-height: 50px !important;
+        max-width: 50px !important;
+        height: 50px;
+        width: 50px;
+    }
+
+    .modal-close:hover {
+        background-color: #14171a !important;
+    }
+
+    .indexCase {
+        height: 405px;
+        position: relative;
+        width: 260px;
+    }
+
+    .indexCaseImg {
+        position: absolute;
+        height: 250px;
+        width: 250px;
+        top: 60px;
+        min-width: 250px;
+    }
+
+    .msgFadeDiv {
+        position: absolute;
+        top: 12px;
+        background: linear-gradient(to bottom, rgb(31, 35, 42), transparent);
+        height: 5%;
+        border-radius: 5px;
+        z-index: 9999;
+        margin-left: 15px;
+        left: 15px;
+        right: 15px;
+    }
+
+    .modalFooterContent {
+        font-size: 15px;
+        color: #edf5e1;
+        overflow-wrap: break-word;
+        text-align: center;
+    }
+
+    .profileDiv {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        padding-bottom: 30px;
+    }
+
+    .affiliatesUserName {
+        color: #edf4de;
+        font-family: "stellar";
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+
+    .affiliatesUserImage {
+        height: 400px;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+
+        border: double 2px transparent;
+        border-radius: 40px;
+        background-image: linear-gradient(white, white), radial-gradient(circle at top left, #d7e0cd, transparent);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+    }
+
+    .affiliatesContent {
+        color: #edf4de;
+        font-family: "stellar";
+        font-size: 20px;
+        margin-left: auto;
+        width: 90%;
+        margin-right: auto;  
+        text-align: center;
+    }
+
+    .displayAffiliates {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        height: 40px;
+        width: 100%;
+        background-color: #2ac78b;
+        color: #EDF5E1;
+        border: 1px solid #edf4de;
+    }
+
+    .affiliateButtonIcon {
+        position: relative;
+        top: 6px;
+    }
+
+    #modal2 {
+        z-index: 99999999 !important;
+        background-color: #14171a;
+        max-height: 85% !important;
+        width: 30% !important;
+        top: 0 !important;
+        border-radius: 15px;
+        overflow-y: hidden;
+    }
+
+    .model-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nameBonusHeader {
+        color: #edf4de;
+    }
+
+    .nameBonusContent {
+        margin-left: 5px;
+        font-weight: bold;
+    }
+
+    .nameBonusDiv {
+        text-align: center;
+        font-size: 30px;
+        font-family: "stellar";
+    }
+
+    .affiliateModalContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 0px !important;
+    }
+
+    .affWarning {
+        text-align: center;
+        color: #e9f5dd;
+        font-size: 15px;
+        font-family: "stellar";
+    }
+
+    input::placeholder {
+        color: #ffffff30 !important;
+     }
+
+    .nameBonusInfo {
+        font-size: 15px;
+        font-family: "stellar-light";
+        color: #e9f5dd;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .nameDiv {
+        border-bottom: 1px solid #2ac78b;
+        padding-right: 24px;
+        padding-left: 24px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .affiliateInput {
+        align-self: center;
+        width: 100%;
+        border-bottom: 2px solid #ffffff73 !important;
+        border-radius: 5px !important;
+        color: #2daae1;
+    }
+
+    .affiliateInputDiv {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .affiliateInputInfo {
+        color: #2daae1;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .createReferralDiv {
+        padding-left: 24px;
+        padding-right: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 1px solid #2ac78b;
+        padding-bottom: 10px;
+    }
+
+    .setReferral {
+        color: #EDF5E1;
+        align-self: center;
+        margin-top: 10px;
+        min-height: 34px;
+
+        width: 150px;
+        border-bottom: 3px solid #1f6148 !important;
+        border-radius: 3px;
+        background: #2ac78b;
+        border: 0;
+        align-self: center;
+    }
+
+    .waxInfo {
+        color: #dce8d0;
+        font-family: "stellar";
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .affiliatesContainer {
+        flex: 1;
+        position: relative;
+    }
+
+    .redeemRefDiv {
+        display: flex;
+        flex-direction: row;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 50px;
+    }
+
+    .redeemRef {
+        color: #EDF5E1;
+        align-self: center;
+        margin-top: 10px;
+        min-height: 34px;
+
+        width: 150px;
+        border-bottom: 3px solid #1f6148 !important;
+        border-radius: 3px;
+        background: #2ac78b;
+        border: 0;
+        align-self: center;
+    }
+
+    .refContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .affiliateButtonNotification {
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: 52px;
+        background-color: #2daae1;
+        min-height: 52px;
+        overflow: auto;
+        font-size: 16px;
+        font-family: "stellar";
+    }
+
+    .affiliatesNotLoggedIn {
+        color: #e9f5dd;
+        font-family: "stellar";
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .redeemReferralDiv {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .setWaxId {
+        width: 150px;
+        border-bottom: 3px solid #1f6148 !important;
+        border-radius: 3px;
+        background: #2ac78b;
+        color: #EDF5E1;
+        border: 0;
+        align-self: center;
+        margin-top: 10px;
+        min-height: 34px;
+    }
+
+    .setWaxId:hover {
+        background: #2ac78bd4;
+        color: white;
+    }
+
+    .affiliatesTabDiv {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .affiliateTabButton {
+        background: transparent;
+        color: white;
+        font-size: 20px;
+        border-bottom: 2px solid #d7e0cd;
+        height: 75px;
+        width: 300px;
+    }
+
+    .affRedeemedUsersContaienr {
+        display: none;
+    }
+    
+    .refCode {
+        font-size: 30px;
+        color: #edf4de;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .refBox {
+        background: #1a1e25;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        color: #edf4de;
+    }
+
+    #usersOnRefList {
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .affAccHeader {
+        text-align: center;
+        font-size: 20px;
+        color: #d7e0cd;
+        height: 75px;
+        border-bottom: 2px solid #d7e0cd94;
+    }
+
+    .affUserObject {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .affObjAvatar {
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        border-radius: 10px;
+    }
+
+    .affObjName {
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    .refCodeHeader {
+        display: inline-block;
+    }
+
+    .refCodeContent {
+        display: inline-block;
+        color: #2daae1;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .refListHeaders {
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        text-align: center;
+        color: #2ac78b;
+    }
+
+    .casesOpenedOnRef {
+        text-align: center;
+        flex: 1;
+        font-size: 20px;
+        display: inline-block;
+        width: 50%;
+    }
+
+    .affUserProfile {
+        width: 50%;
+        display: table;
+    }
+
+    .affNoRefsText {
+        font-size: 25px;
+        text-align: center;
+        color: #d7e0cd;
+    }
+
+    .affiliateClose {
+        top: 10px !important;
+
+    }
+
+    #modal3 {
+        border-radius: 20px;
+        bottom: inherit !important;
+    }
+
+    .referralModalHeader {
+        background-color: #14171a !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 40px;
+        text-align: center;
+        color: #2daae1;
+        font-family: "stellar";
+        font-weight: bold;
+    }
+
+    .refModalCode {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .refModalCodeHeader {
+        font-size: 40px;
+        color: white;
+        align-items: center;
+        font-family: "stellar";
+        align-self: center;
+    }
+
+    .refModalCodeContent {
+        display: inline-block;
+        font-size: 50px;
+        color: #2daae1;
+        font-family: "stellar";
+        margin-left: 10px;
+    }
+
+    .referrerProfile {
+        font-size: 30px;
+        color: #edf4de;
+        font-family: "stellar";
+        margin-top: 30px;
+        padding: 20px;
+    }
+
+    .refProfile {
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+    }
+
+    .refFriendName {
+        align-self: center;
+        color: #267ea5;
+        font-size: 30px;
+    }
+
+    .refFriendAvatar {
+        height: 100px;
+        width: 100px;
+        border-radius: 20px;
+        margin-right: 20px;
+    }
+
+    .friendReferralButton {
+        width: 200px;
+        border-bottom: 3px solid #1f6148 !important;
+        border-radius: 3px;
+        background: #2ac78b;
+        color: #EDF5E1;
+        border: 0;
+        align-self: center;
+        margin-top: 10px;
+        min-height: 50px;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+
+    .acceptReferralDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .referralModalFooter {
+        font-size: 25px;
+        color: #edf5e1;
+        overflow-wrap: break-word;
+        text-align: center;
+    }
+
+    #declineReferral:hover {
+        cursor: pointer;
+    }
+
+    #acceptReferral:hover {
+        cursor: pointer;
+    }
+
+    .refProfitDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .refProfitHeader {
+        font-size: 30px;
+        color: #edf4de;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .refProfitContent {
+        align-self: center;
+        font-size: 30px;
+        color: #2daae1;
+        text-align: center;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+
+    .shareLink {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 10px; 
+        margin-top: 10px;
+    }
+
+    .shareLinkHeader {
+        color: #2daae1;
+        font-family: "stellar";
+        font-size: 20px;
+        text-align: center;
+        align-self: center;
+    }
+
+    .shareLinkContent {
+        align-self: center;
+        font-size: 20px !important;
+        margin-left: 10px !important;
+        width: 50% !important;
+        margin-bottom: 0 !important;
+        margin-left: 10px !important;
+        background-color: #d7e0cd !important;
+        border-radius: 10px !important;
+        height: 35px !important;
+        color: #262a33 !important;
+        padding-left: 20px !important;
+    }
+
+    .shareLinkIcon {
+        height: 30px;
+        width: 30px;
+        margin-left: 10px;
+        top: 5px;
+        position: relative;
+   }
+
+    .shareLinkIcon:hover {
+        cursor: pointer;
+    }
+
+    .refCodeUsedHeader {
+        color: #edf4de;
+        font-family: "stellar";
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .refCodeUsedContent {
+        color: #2daae1;
+        font-family: "stellar";
+        font-size: 30px;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .displayRefCodeUsed {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-bottom: 1px solid #edf4de87;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+    }
+
+    .verifiedIconIndex {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    .material-tooltip {
+        padding: 10px 8px;
+        font-size: 15px !important;
+        z-index: 2000;
+        background-color: transparent;
+        border-radius: 2px;
+        color: #fff;
+        min-height: 36px;
+        line-height: 120%;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        max-width: calc(100% - 4px);
+        overflow: hidden;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+        visibility: hidden;
+        background-color: #1a1e25;
+        font-family: "stellar-light";
+        font-size: 0.8em;
+        border-radius: 5px;
+      }
+
+    .itemFilter {
+        background: url(../drawables/shine.png);
+        position: absolute;
+        height: 140;
+        width: 150px;
+        z-index: 9999;
+        opacity: 0.2;
+    }
+
+    .affHighlightedText {
+        color:#2daae1;
+        font-size:30px;
+        font-weight:bold;
+    }
+
+    .switch label input[type=checkbox]:checked+.lever:after {
+        background-color: #0097da !important;
+    }
+    .switch label input[type=checkbox]:checked+.lever {
+        background-color: #2DAADE !important;
+    }
+
+    .topItemsDiv {
+        display: none;
+        transition: all 0.5s linear;
+        left: 9px;
+        top: 60px;
+        bottom: 3px;
+        width: 180px;
+        overflow: hidden;
+        border: 2px solid #1a1e24;
+        border-radius: 10px;
+        box-shadow: inset 0px 0px 38px 0px black;
+        position: absolute;
+        border: 1px solid #edf5e15c;
+    }
+
+    .TopItemsContainer {
+        overflow: hidden;
+        transition: all 0.5s linear;
+        height: 100vh;
+        position: relative;
+        box-shadow: inset -1px 0px 40px 0px black;
+        background-color: #181d24;
+    }
+
+    .liveItemVGOId {
+        position: absolute;
+        right: 5;
+        top: 0;
+        font-size: 12;
+        color: #cab500;
+    }
+
+    .liveItemVGOCondition {
+        position: absolute;
+        top: 0;
+        left: 5px;
+        font-weight: 500;
+        font-family: "stellar";
+        font-size: 16px;
+    }
+
+    .switch label .lever:after {
+        background-color: #2daae1 !important;
+    }
+
+    .liveContainerTransition {
+        transition: all 0.5s linear;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        width: 0px;
+        border-radius: 10px;
+        z-index: 99999;
+        background-color: #1a1e25;
+    }
+
+    .topVGOItems {
+        background-color: #171c23;
+        margin-left: 14px;
+        border-radius: 10px;
+        margin-top: 8px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        height: 140;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        transition: all 0.5s linear;
+        overflow: hidden;
+        box-shadow: inset 0px 0px 12px 5px #1c222b;
+    }
+
+    .vgoInvItemId {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 10px;
+        color: #2daae1;
+    }
+
+    .vgoInvItemFloat {
+        position: absolute;
+        bottom: 37px;
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+        color: #d08538;
+    }
+
+    .topVgoInvImage {
+        filter: drop-shadow(3px 3px 2px black);
+        z-index: 10 !important;
+        height: 220px;
+        width: 220px;
+    }
+
+    .bottomVgoInvImage {
+        z-index: 5 !important;
+        height: 230px;
+        width: 230px;
+        opacity: 0.6;
+        filter: blur(16px);
+    }
+
+    .accountInvDropdown {
+        position: absolute;
+        right: 50;
+        top: 20;
+        width: 140px;
+    }
+
+    .invDropdown {
+        position: absolute;
+        right: 50px;
+        top: 220px;
+        width: 150px;
+    }
+
+    #dropdown1 {
+        background-color: #1a1e25;
+    }
+
+    #dropdown2 {
+        background-color: #1a1e25;
+    }
+
+    .dropDownText {
+        font-family: "stellar";
+        font-size: 16px;
+    }
+
+    .dropDownText:hover {
+        background-color: #232c3a !important;
+    }
+ 
+      
