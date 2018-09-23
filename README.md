@@ -1,5 +1,5 @@
 # VGO
-case opening site
+VGO Case Opening Site
 
 Fully working VGO site and existing DB from current use of profiles that interacted with my site. The config file containing the
 Steam, OPskins and VGO API keys and a WAXExpressTradeID are excluded but can be replaced with your own. The API keys are free. They are 
